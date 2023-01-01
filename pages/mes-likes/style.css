@@ -1,0 +1,152 @@
+body{
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	margin: 0px 20px;
+	padding: 0px;
+	padding-bottom: 80px;
+}
+
+#titrePageBox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+	border: solid 3px #F0F0F0;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	border-radius: 12px;
+}
+
+#titrePageBox h1{
+	font-family: poppins, sans-serif;
+	font-size: 18px;
+}
+
+#cardsContainer{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.card{
+	position: relative;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	color: black;
+	z-index: 150;
+	border: solid 3px #F0F0F0;
+	border-radius: 18px;
+	margin-bottom: 20px;
+}
+
+.card .titre{
+	max-height: 35px;
+	font-size: 14px;
+	font-weight: 600;
+	overflow: hidden;
+	margin: 15px 15px 0px 15px;
+}
+
+.card .matiereClasseBox{
+	margin-top: 0px;
+	margin-left: 15px;
+	width: 100%;
+	display: flex;
+	padding: 0px;
+	font-size: 12px;.
+	font-family: poppins, sans-serif;
+	font-weight: 600;
+	color: #A39C9C;
+}
+
+.matiere{
+	border-radius: 5px;
+	border: 1.5px solid #C7C6C6;
+	padding: 2px 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 6px;
+}
+
+.classe{
+	border-radius: 5px;
+	border: 1.5px solid #C7C6C6;
+	padding: 2px 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 6px;
+}
+
+.resolu{
+	border-radius: 5px;
+	border: none;
+	background-color: #B8FFBB;
+	color: #11B30B;
+	padding: 2px 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card .bottom{
+	margin-bottom: -2px;
+	margin-left: -3px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 30px;
+	background-color: #F0F0F0;
+	border: solid 3px #F0F0F0;
+	border-radius: 0px 0px 18px 18px;
+	font-size: 15px;
+	color: #8A8787;
+	font-weight: 600;
+}
+
+.card .bottom .nbrReponsesBox{
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+.card .bottom .nbrReponsesBox.nul{
+	color: red;
+}
+.card .bottom .nbrReponsesBox i{
+	font-size: 22px;
+	margin-right: 5px;
+}
+
+.card .bottom .separation{
+	background-color: #DCDCDC;
+	width: 1px;
+	height: 75%;
+	margin: 0px 15px;
+}
+
+.card .bottom .cardForm button{
+	position: absolute;
+	background-color: transparent;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 2px;
+	bottom: 2px;
+	outline: none;
+	border-style: none;
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+
+@media (min-width: 430px){
+	body{
+		max-width: 40%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

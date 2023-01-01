@@ -1,0 +1,156 @@
+html{
+	background: rgb(0,170,255);
+	background: linear-gradient(145deg, rgba(0,170,255,1) 0%, rgba(0,52,255,1) 100%);
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: roboto, sans-serif;
+	margin-top: 20px; 
+}
+
+form{
+	background-color: white;
+	border-radius: 25px;
+	padding: 20px 20px 10px 20px;
+	width: 70%;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.25);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+form h2{
+	font-family: poppins, sans-serif;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+input{
+	background-color: white;
+	border: solid 1.5px #E3E8F0;
+	border-radius: 10px;
+	height: 35px;
+	width: 95%;
+	margin-bottom: 20px;
+	outline: none;
+	padding-left: 12px;
+}
+
+input::placeholder{
+	color: #A8B2BE;
+}
+
+label{
+	color: #475E6B;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.submitBox{
+	width: 100%;
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0px;
+}
+
+input[type=submit]{
+	width: auto;
+	height: auto;
+	padding: 10px 20px;
+	background: rgb(0,170,255);
+	background: linear-gradient(145deg, rgba(0,170,255,1) 0%, rgba(0,52,255,1) 100%);
+	border: none;
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+	box-shadow: 0px 2px 15px rgba(0,128,255,0.5);
+	margin: 0px;
+}
+
+#separation{
+	height: 30px;
+	background-color: transparent;
+}
+
+#popup{
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#popup #card{
+	background-color: white;
+	width: 80%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 15px;
+	text-align: center;
+	font-family: poppins, sans-serif;
+}
+
+#popup h2{
+	font-family: poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	color: black;
+}
+
+#popup p{
+	color: #222222;
+	font-size: 15px;
+	font-family: roboto, sans-serif;
+}
+
+#popup form{
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	padding: none;
+	width: 100%;
+}
+#popup form button{
+	border: none;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	background-color: #0074FF;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.card .annulerBtn{
+	background-color: transparent;
+	color: red;
+	border: none;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+@media (min-width: 430px){
+	form{
+		max-width: 440px;
+	}
+}

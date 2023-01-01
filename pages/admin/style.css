@@ -1,0 +1,39 @@
+body{
+	font-family: roboto, sans-serif;
+}
+
+h1{
+	font-family: poppins, sans-serif;
+	font-size: 25px;
+	text-align: center;
+	color: #0099FF;
+}
+
+h2{
+	font-family: poppins, sans-serif;
+	font-size: 22px;
+}
+
+input[type=number]{
+	border: solid 1px grey;
+	border-radius: 5px;
+	background-color: white;
+	padding: 5px 10px;
+	width: 50px;
+}
+
+.devoirBox{
+	border-left: solid 3.5px grey;
+	padding-left: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.devoirBox .btnsBox{
+	display: flex;
+	flex-direction: row;
+}
+
+.devoirBox .btnsBox button{
+	margin-right: 10px;
+}
